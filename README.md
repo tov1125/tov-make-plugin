@@ -86,3 +86,41 @@ agents/
 /plugin marketplace add tov1125/tov-make-market
 /plugin install agent-team-creator@tov-make-market
 ```
+
+---
+
+### init-free
+
+새 프로젝트의 초기 환경을 자동으로 셋업하는 플러그인입니다. CLAUDE.md 생성과 `.claude/settings.local.json` 권한 설정을 한 번에 처리하여, 승인 피로 없이 바로 개발을 시작할 수 있게 해줍니다.
+
+#### 주요 기능
+
+- **프로젝트 자동 분석**: 기존 파일, 언어/프레임워크 자동 감지 (Node, Python, Rust, Go, Docker 등)
+- **CLAUDE.md 생성**: 프로젝트 종류에 맞는 빌드/테스트 명령어, 아키텍처 가이드 자동 작성
+- **settings.local.json 생성**: 범용 개발 허용 규칙 자동 설정 (Read, Edit, Write, Git, npm, python3 등)
+- **기존 설정 병합**: 이미 settings가 있으면 덮어쓰지 않고 기존 규칙을 보존하며 병합
+- **안전한 기본값**: rm, kill, sudo, chmod 등 위험 명령어는 자동 허용에서 제외
+
+#### 실행 흐름
+
+```
+프로젝트 분석 → CLAUDE.md 생성 → settings.local.json 생성 → 완료 리포트
+```
+
+#### 프로젝트별 추가 허용 규칙
+
+| 감지 파일 | 프로젝트 종류 | 추가 허용 규칙 |
+|-----------|-------------|---------------|
+| `package.json` (yarn) | Node (yarn) | `Bash(yarn:*)` |
+| `pnpm-lock.yaml` | Node (pnpm) | `Bash(pnpm:*)` |
+| `pyproject.toml` | Python | `Bash(pip:*)`, `Bash(pytest:*)` |
+| `Cargo.toml` | Rust | `Bash(cargo:*)` |
+| `go.mod` | Go | `Bash(go:*)` |
+| `docker-compose.yml` | Docker | `Bash(docker:*)` |
+
+#### 설치 방법
+
+```
+/plugin marketplace add tov1125/tov-make-market
+/plugin install init-free@tov-make-market
+```
