@@ -1,0 +1,8 @@
+{
+    "name": "hwpx-writer",
+    "description": "한글(hwpx) 작성기",
+    "version": "1.0.0",
+    "author": {
+        "name" : "tov"
+    }
+}
