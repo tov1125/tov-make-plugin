@@ -1,6 +1,7 @@
 ---
 name: init-free
 description: "새 프로젝트의 초기 환경을 자동으로 셋업하는 스킬. CLAUDE.md 생성과 .claude/settings.local.json 권한 설정을 한 번에 처리하여 승인피로 없이 바로 개발을 시작할 수 있게 해준다. 사용자가 '/init-free', '프로젝트 초기화', '프로젝트 셋업', '새 프로젝트 시작', 'init', '세팅해줘', '환경설정', '승인피로', 'settings 만들어줘' 등을 언급하면 이 스킬을 사용한다."
+allowed-tools: Read, Write, Edit, Bash, Glob, Grep, WebSearch, WebFetch
 ---
 
 # init-free
