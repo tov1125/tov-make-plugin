@@ -31,6 +31,15 @@
             "author": {
                 "name": "tov1125"
             }
+        },
+        {
+            "name": "slide-hdml",
+            "source": "./plugins/slide-hdml",
+            "description": "순수 HTML/CSS/JS 단일 파일 슬라이드 프레젠테이션 생성기",
+            "version": "1.0.0",
+            "author": {
+                "name": "tov1125"
+            }
         }
     ]
 }

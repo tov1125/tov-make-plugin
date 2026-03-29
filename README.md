@@ -124,3 +124,35 @@ agents/
 /plugin marketplace add tov1125/tov-make-market
 /plugin install init-free@tov-make-market
 ```
+
+---
+
+### slide-hdml
+
+순수 HTML/CSS/JS 단일 파일로 완결되는 웹 슬라이드 프레젠테이션을 생성하는 플러그인입니다. 외부 라이브러리 없이 브라우저에서 바로 열면 동작합니다.
+
+#### 주요 기능
+
+- **자연어 → 슬라이드**: "발표자료 만들어줘"로 바로 생성
+- **문서 변환**: Markdown, 텍스트, PDF, URL, PPTX, HWPX → HTML 슬라이드
+- **전환 효과**: fade, slide, zoom 3종 전환
+- **빌드 애니메이션**: fade-up, grow-in 등 순차 등장 효과
+- **코드 하이라이트**: 라인별 하이라이트 + 단계별 진행
+- **2단 컬럼 레이아웃**: 비교/대조 슬라이드
+- **발표자 노트 / 터치 스와이프 / 풀스크린** 지원
+
+#### 테마
+
+| 테마 | 용도 |
+|------|------|
+| `theme-dark` | 타이틀, 마무리 슬라이드 |
+| `theme-light` | 본문 슬라이드 |
+| `theme-accent` | 강조, 핵심 메시지 |
+| `theme-code` | 코드 블록 슬라이드 |
+
+#### 설치 방법
+
+```
+/plugin marketplace add tov1125/tov-make-market
+/plugin install slide-hdml@tov-make-market
+```
