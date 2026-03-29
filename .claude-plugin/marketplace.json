@@ -13,6 +13,15 @@
             "author": {
                 "name": "tov1125"
             }
+        },
+        {
+            "name": "hwpx-writer",
+            "source": "./plugins/hwpx-writer",
+            "description": "HWPX(한글 워드프로세서) 문서 분석, 읽기, 쓰기, 양식 채우기 통합 스킬",
+            "version": "1.0.0",
+            "author": {
+                "name": "tov1125"
+            }
         }
     ]
 }
